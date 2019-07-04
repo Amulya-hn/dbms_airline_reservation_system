@@ -1,0 +1,99 @@
+<html>
+    <!-- $sql = "select * from status where id=(select max(id) from status)";
+$result = $conn->query($sql);
+
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br>STOCK REMAINING IN CMS(RICE) " .$row["quantity1"]."</br>";
+        echo "<br>STOCK REMAINING IN CMS(RAGI) ". $row["quantity2"] ."</br>"; 
+        echo "<br>STOCK REMAINING IN CMS(TOOR DAL) ". $row["quantity3"]."</br>";-->
+<head>
+<style>
+b
+{
+
+    margin-bottom: 25px;
+}
+* {
+    box-sizing: border-box;
+}
+body
+{
+font-size: 25px;
+font-color:red;
+
+}
+input[type=text], input[type=password]
+{
+padding: 10px;
+margin:20px;
+width: 20%;
+}
+button
+{
+	background-color: blue;
+	width:10%;
+	font-color:red;
+	padding: 10px;
+}
+a
+{
+color: red;
+}
+regstr
+{
+width:100%;
+text-align: center;
+cursor:pointer:
+background-color: green;
+padding: 16px 20px;
+}
+[class*="cont"] {
+    width: 100%;
+}
+html {
+    /* The image used */
+    background-image: url("im57718372.jpg");
+     
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+    
+<h1>FLIGHT</h1>
+
+<b>
+
+
+<div class="cont">
+
+    <form action="update.php" method="post">
+	<p>ENTER DETAILS TO BE UPDATED</p>
+<label for="pname1"><b>Enter GIVEN PASSENGER NAME</b></label>
+<input type="text" class="input-block-level" placeholder="Enter name" name="pname1" required />
+<p> </p>
+<label for="paddress1"><b>Enter GIVEN ADDRESS</b></label>
+<input type="text" class="input-block-level" placeholder="Enter address" name="paddress1" required />
+<p> </p>
+<label for="pname2"><b>Enter NEW PASSENGER NAME</b></label>
+<input type="text" class="input-block-level" placeholder="Enter name" name="pname2" required />
+<p> </p>
+<label for="paddress2"><b>Enter NEW ADDRESS</b></label>
+<input type="text" class="input-block-level" placeholder="Enter address" name="paddress2" required />
+<p> </p>
+
+<button class="btn btn-large btn-primary" type="submit" name="btn-signup">CONFIRM</button>
+</form>
+</div>
+
+<!--<p>Already have an account? <a href="#">Sign in</a>.</p>-->
+</b>
+</body>
+</html>
